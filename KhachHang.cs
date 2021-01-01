@@ -20,10 +20,10 @@ namespace db_assignment_2
 
         // Connection string : usually create new class named "ConnectionString"
 
-        DataSet GetAllKhachHang()
+        DataTable GetAllKhachHang()
         {
 
-            DataSet data = new DataSet();
+            DataTable data = new DataTable();
 
             //string ID = "PV1012";
             string query = "select * from Khachhang";
@@ -47,7 +47,7 @@ namespace db_assignment_2
 
         private void loaddataBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = GetAllKhachHang().Tables[0];
+            dataGridView1.DataSource = GetAllKhachHang();
         }
 
         private void getCountBtn_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace db_assignment_2
                 connection.Close();
             }
             MessageBox.Show("Total : " + count.ToString());
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -31,9 +31,11 @@ namespace db_assignment_2
         {
             this.btnKhachhang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.khachHangUserControl = new db_assignment_2.KhachHang();
             this.btnThanNhan = new System.Windows.Forms.Button();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.thanNhanUserControl = new db_assignment_2.ThanNhan();
+            this.khachHangUserControl = new db_assignment_2.KhachHang();
+            this.myUserControl = new db_assignment_2.MyUserControl();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,20 +51,13 @@ namespace db_assignment_2
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.myUserControl);
             this.panel1.Controls.Add(this.thanNhanUserControl);
             this.panel1.Controls.Add(this.khachHangUserControl);
             this.panel1.Location = new System.Drawing.Point(193, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1029, 624);
             this.panel1.TabIndex = 5;
-            // 
-            // khachHangUserControl
-            // 
-            this.khachHangUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.khachHangUserControl.Location = new System.Drawing.Point(0, 0);
-            this.khachHangUserControl.Name = "khachHangUserControl";
-            this.khachHangUserControl.Size = new System.Drawing.Size(1029, 624);
-            this.khachHangUserControl.TabIndex = 0;
             // 
             // btnThanNhan
             // 
@@ -74,6 +69,15 @@ namespace db_assignment_2
             this.btnThanNhan.UseVisualStyleBackColor = true;
             this.btnThanNhan.Click += new System.EventHandler(this.btnThanNhan_Click);
             // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Location = new System.Drawing.Point(32, 197);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(140, 67);
+            this.kryptonButton1.TabIndex = 7;
+            this.kryptonButton1.Values.Text = "kryptonButton1";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            // 
             // thanNhanUserControl
             // 
             this.thanNhanUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -82,11 +86,27 @@ namespace db_assignment_2
             this.thanNhanUserControl.Size = new System.Drawing.Size(1029, 624);
             this.thanNhanUserControl.TabIndex = 1;
             // 
+            // khachHangUserControl
+            // 
+            this.khachHangUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHangUserControl.Location = new System.Drawing.Point(0, 0);
+            this.khachHangUserControl.Name = "khachHangUserControl";
+            this.khachHangUserControl.Size = new System.Drawing.Size(1029, 624);
+            this.khachHangUserControl.TabIndex = 0;
+            // 
+            // myUserControl
+            // 
+            this.myUserControl.Location = new System.Drawing.Point(22, 3);
+            this.myUserControl.Name = "myUserControl";
+            this.myUserControl.Size = new System.Drawing.Size(941, 555);
+            this.myUserControl.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 648);
+            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.btnThanNhan);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnKhachhang);
@@ -104,6 +124,8 @@ namespace db_assignment_2
         private KhachHang khachHangUserControl;
         private System.Windows.Forms.Button btnThanNhan;
         private ThanNhan thanNhanUserControl;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private MyUserControl myUserControl;
     }
 }
 
