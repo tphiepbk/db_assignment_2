@@ -1,0 +1,4 @@
+# db_assignment_2
+
+NHỚ THAY ĐỔI CONNECTTION STRING TRONG CLASS CONNECTION STRING NHA !!!!!
+CÁCH LẤY CONNECTION STRING THÌ TRONG CLIP CÓ NÓI, LINK : https://www.youtube.com/watch?v=fQYAJr57iQM
