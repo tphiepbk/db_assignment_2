@@ -21,30 +21,18 @@ namespace db_assignment_2
 
         private void btnKhachhang_Click(object sender, EventArgs e)
         {
-            khachHangUserControl.Visible = true;
-            thanNhanUserControl.Visible = false;
-            myUserControl.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            khachHangUserControl.Visible = false;
-            thanNhanUserControl.Visible = false;
-            myUserControl.Visible = false;
         }
 
         private void btnThanNhan_Click(object sender, EventArgs e)
         {
-            khachHangUserControl.Visible = false;
-            thanNhanUserControl.Visible = true;
-            myUserControl.Visible = false;
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            khachHangUserControl.Visible = false;
-            thanNhanUserControl.Visible = false;
-            myUserControl.Visible = true;
         }
     }
 }

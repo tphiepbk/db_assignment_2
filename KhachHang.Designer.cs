@@ -45,6 +45,8 @@ namespace db_assignment_2
             this.tb_ngaysinh = new System.Windows.Forms.TextBox();
             this.tb_sdt = new System.Windows.Forms.TextBox();
             this.tb_email = new System.Windows.Forms.TextBox();
+            this.tb_gioitinh = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gb_thongtinkhachhang.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +58,7 @@ namespace db_assignment_2
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(908, 456);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // loaddataBtn
             // 
@@ -80,6 +82,8 @@ namespace db_assignment_2
             // 
             // gb_thongtinkhachhang
             // 
+            this.gb_thongtinkhachhang.Controls.Add(this.tb_gioitinh);
+            this.gb_thongtinkhachhang.Controls.Add(this.label7);
             this.gb_thongtinkhachhang.Controls.Add(this.tb_email);
             this.gb_thongtinkhachhang.Controls.Add(this.tb_sdt);
             this.gb_thongtinkhachhang.Controls.Add(this.tb_ngaysinh);
@@ -94,7 +98,7 @@ namespace db_assignment_2
             this.gb_thongtinkhachhang.Controls.Add(this.label1);
             this.gb_thongtinkhachhang.Location = new System.Drawing.Point(958, 22);
             this.gb_thongtinkhachhang.Name = "gb_thongtinkhachhang";
-            this.gb_thongtinkhachhang.Size = new System.Drawing.Size(371, 505);
+            this.gb_thongtinkhachhang.Size = new System.Drawing.Size(314, 505);
             this.gb_thongtinkhachhang.TabIndex = 4;
             this.gb_thongtinkhachhang.TabStop = false;
             this.gb_thongtinkhachhang.Text = "Thông tin khách hàng";
@@ -120,7 +124,7 @@ namespace db_assignment_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 88);
+            this.label3.Location = new System.Drawing.Point(6, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 2;
@@ -129,7 +133,7 @@ namespace db_assignment_2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 114);
+            this.label4.Location = new System.Drawing.Point(7, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 3;
@@ -138,7 +142,7 @@ namespace db_assignment_2
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 140);
+            this.label5.Location = new System.Drawing.Point(7, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 4;
@@ -147,7 +151,7 @@ namespace db_assignment_2
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 166);
+            this.label6.Location = new System.Drawing.Point(6, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 5;
@@ -157,43 +161,59 @@ namespace db_assignment_2
             // 
             this.tb_makhachhang.Location = new System.Drawing.Point(103, 33);
             this.tb_makhachhang.Name = "tb_makhachhang";
-            this.tb_makhachhang.Size = new System.Drawing.Size(262, 20);
+            this.tb_makhachhang.Size = new System.Drawing.Size(196, 20);
             this.tb_makhachhang.TabIndex = 6;
             // 
             // tb_tenkhachhang
             // 
             this.tb_tenkhachhang.Location = new System.Drawing.Point(103, 59);
             this.tb_tenkhachhang.Name = "tb_tenkhachhang";
-            this.tb_tenkhachhang.Size = new System.Drawing.Size(262, 20);
+            this.tb_tenkhachhang.Size = new System.Drawing.Size(196, 20);
             this.tb_tenkhachhang.TabIndex = 7;
             // 
             // tb_cmnd
             // 
-            this.tb_cmnd.Location = new System.Drawing.Point(103, 85);
+            this.tb_cmnd.Location = new System.Drawing.Point(103, 111);
             this.tb_cmnd.Name = "tb_cmnd";
-            this.tb_cmnd.Size = new System.Drawing.Size(262, 20);
+            this.tb_cmnd.Size = new System.Drawing.Size(196, 20);
             this.tb_cmnd.TabIndex = 8;
             // 
             // tb_ngaysinh
             // 
-            this.tb_ngaysinh.Location = new System.Drawing.Point(103, 111);
+            this.tb_ngaysinh.Location = new System.Drawing.Point(103, 137);
             this.tb_ngaysinh.Name = "tb_ngaysinh";
-            this.tb_ngaysinh.Size = new System.Drawing.Size(262, 20);
+            this.tb_ngaysinh.Size = new System.Drawing.Size(196, 20);
             this.tb_ngaysinh.TabIndex = 9;
             // 
             // tb_sdt
             // 
-            this.tb_sdt.Location = new System.Drawing.Point(103, 137);
+            this.tb_sdt.Location = new System.Drawing.Point(103, 163);
             this.tb_sdt.Name = "tb_sdt";
-            this.tb_sdt.Size = new System.Drawing.Size(262, 20);
+            this.tb_sdt.Size = new System.Drawing.Size(196, 20);
             this.tb_sdt.TabIndex = 10;
             // 
             // tb_email
             // 
-            this.tb_email.Location = new System.Drawing.Point(103, 163);
+            this.tb_email.Location = new System.Drawing.Point(103, 189);
             this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(262, 20);
+            this.tb_email.Size = new System.Drawing.Size(196, 20);
             this.tb_email.TabIndex = 11;
+            // 
+            // tb_gioitinh
+            // 
+            this.tb_gioitinh.Location = new System.Drawing.Point(103, 85);
+            this.tb_gioitinh.Name = "tb_gioitinh";
+            this.tb_gioitinh.Size = new System.Drawing.Size(196, 20);
+            this.tb_gioitinh.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 88);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Giới tính :";
             // 
             // KhachHang
             // 
@@ -204,7 +224,7 @@ namespace db_assignment_2
             this.Controls.Add(this.loaddataBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "KhachHang";
-            this.Size = new System.Drawing.Size(1354, 608);
+            this.Size = new System.Drawing.Size(1285, 542);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gb_thongtinkhachhang.ResumeLayout(false);
             this.gb_thongtinkhachhang.PerformLayout();
@@ -230,5 +250,7 @@ namespace db_assignment_2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_gioitinh;
+        private System.Windows.Forms.Label label7;
     }
 }

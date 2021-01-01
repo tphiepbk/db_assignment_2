@@ -64,9 +64,16 @@ namespace db_assignment_2
             MessageBox.Show("Total : " + count.ToString());
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
+            int rowIndex = dataGridView1.CurrentRow.Index;
+            tb_makhachhang.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
+            tb_cmnd.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
+            tb_gioitinh.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
+            tb_tenkhachhang.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString()  + " " + dataGridView1.Rows[rowIndex].Cells[4].Value.ToString() + " " + dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
+            tb_ngaysinh.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
+            tb_sdt.Text = dataGridView1.Rows[rowIndex].Cells[7].Value.ToString();
+            tb_email.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
         }
     }
 }
