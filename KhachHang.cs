@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace db_assignment_2
 {
@@ -47,8 +48,9 @@ namespace db_assignment_2
 
         private void loadData()
         {
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.DataSource = GetAllKhachHang();
+            gunaDataGridView_main.DataSource = GetAllKhachHang();
+            gunaDataGridView_main.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_main.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void getCount() 
@@ -65,28 +67,28 @@ namespace db_assignment_2
             lb_count.Text = count.ToString();
         }
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            int rowIndex = dataGridView1.CurrentRow.Index;
-            tb_makhachhang.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
-            tb_cmnd.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
-            tb_gioitinh.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
-            tb_tenkhachhang.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString()  + " " + dataGridView1.Rows[rowIndex].Cells[4].Value.ToString() + " " + dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
-            tb_ngaysinh.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            tb_sdt.Text = dataGridView1.Rows[rowIndex].Cells[7].Value.ToString();
-            tb_email.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
-        }
-
         private void KhachHang_Load(object sender, EventArgs e)
         {
             loadData();
             getCount();
         }
 
-        private void btn_themkhachhang_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             var formThemKhachHang = new FormThemKhachHang();
             formThemKhachHang.Show();
+        }
+
+        private void gunaDataGridView_main_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = gunaDataGridView_main.CurrentRow.Index;
+            tb_makhachhang.Text = gunaDataGridView_main.Rows[rowIndex].Cells[0].Value.ToString();
+            tb_cmnd.Text = gunaDataGridView_main.Rows[rowIndex].Cells[1].Value.ToString();
+            tb_gioitinh.Text = gunaDataGridView_main.Rows[rowIndex].Cells[2].Value.ToString();
+            tb_tenkhachhang.Text = gunaDataGridView_main.Rows[rowIndex].Cells[3].Value.ToString() + " " + gunaDataGridView_main.Rows[rowIndex].Cells[4].Value.ToString() + " " + gunaDataGridView_main.Rows[rowIndex].Cells[5].Value.ToString();
+            tb_ngaysinh.Text = gunaDataGridView_main.Rows[rowIndex].Cells[6].Value.ToString();
+            tb_sdt.Text = gunaDataGridView_main.Rows[rowIndex].Cells[7].Value.ToString();
+            tb_email.Text = gunaDataGridView_main.Rows[rowIndex].Cells[8].Value.ToString();
         }
     }
 }
