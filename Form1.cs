@@ -21,10 +21,12 @@ namespace db_assignment_2
 
         private void btnKhachhang_Click(object sender, EventArgs e)
         {
+            uc_khachhang.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            uc_khachhang.Visible = false;
         }
 
         private void btnThanNhan_Click(object sender, EventArgs e)

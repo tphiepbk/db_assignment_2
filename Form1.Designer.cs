@@ -33,7 +33,7 @@ namespace db_assignment_2
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThanNhan = new System.Windows.Forms.Button();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.khachHang1 = new db_assignment_2.KhachHang();
+            this.uc_khachhang = new db_assignment_2.KhachHang();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +49,10 @@ namespace db_assignment_2
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.khachHang1);
+            this.panel1.Controls.Add(this.uc_khachhang);
             this.panel1.Location = new System.Drawing.Point(176, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1310, 570);
+            this.panel1.Size = new System.Drawing.Size(1187, 525);
             this.panel1.TabIndex = 5;
             // 
             // btnThanNhan
@@ -74,18 +74,18 @@ namespace db_assignment_2
             this.kryptonButton1.Values.Text = "kryptonButton1";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // khachHang1
+            // uc_khachhang
             // 
-            this.khachHang1.Location = new System.Drawing.Point(18, 14);
-            this.khachHang1.Name = "khachHang1";
-            this.khachHang1.Size = new System.Drawing.Size(1285, 542);
-            this.khachHang1.TabIndex = 0;
+            this.uc_khachhang.Location = new System.Drawing.Point(12, 14);
+            this.uc_khachhang.Name = "uc_khachhang";
+            this.uc_khachhang.Size = new System.Drawing.Size(1163, 506);
+            this.uc_khachhang.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1498, 588);
+            this.ClientSize = new System.Drawing.Size(1377, 549);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.btnThanNhan);
             this.Controls.Add(this.panel1);
@@ -103,7 +103,7 @@ namespace db_assignment_2
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnThanNhan;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private KhachHang khachHang1;
+        private KhachHang uc_khachhang;
     }
 }
 

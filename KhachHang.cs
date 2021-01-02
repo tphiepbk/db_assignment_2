@@ -45,13 +45,14 @@ namespace db_assignment_2
             return data;
         }
 
-        private void loaddataBtn_Click(object sender, EventArgs e)
+        private void loadData()
         {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = GetAllKhachHang();
         }
 
-        private void getCountBtn_Click(object sender, EventArgs e)
-        {
+        private void getCount() 
+        { 
             int count = 0;
             string queryGetCount = "select count(*) from Khachhang";
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
@@ -61,7 +62,7 @@ namespace db_assignment_2
                 count = (int)command.ExecuteScalar();
                 connection.Close();
             }
-            MessageBox.Show("Total : " + count.ToString());
+            lb_count.Text = count.ToString();
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -74,6 +75,18 @@ namespace db_assignment_2
             tb_ngaysinh.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
             tb_sdt.Text = dataGridView1.Rows[rowIndex].Cells[7].Value.ToString();
             tb_email.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
+        }
+
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+            loadData();
+            getCount();
+        }
+
+        private void btn_themkhachhang_Click(object sender, EventArgs e)
+        {
+            var formThemKhachHang = new FormThemKhachHang();
+            formThemKhachHang.Show();
         }
     }
 }
