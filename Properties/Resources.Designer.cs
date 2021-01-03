@@ -63,6 +63,16 @@ namespace db_assignment_2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _120x120hcmut {
+            get {
+                object obj = ResourceManager.GetObject("_120x120hcmut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent_account {
             get {
                 object obj = ResourceManager.GetObject("fluent_account", resourceCulture);

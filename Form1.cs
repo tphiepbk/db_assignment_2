@@ -22,6 +22,8 @@ namespace db_assignment_2
         private void Form1_Load(object sender, EventArgs e)
         {
             uc_khachhang.Visible = false;
+
+            pb_logo.Image = Properties.Resources._120x120hcmut;
         }
         private void gunaButton_khachhang_Click(object sender, EventArgs e)
         {

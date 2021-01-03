@@ -141,5 +141,11 @@
   <ItemGroup>
     <None Include="Resources\fluent_account.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\475_hcmut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120x120hcmut.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
