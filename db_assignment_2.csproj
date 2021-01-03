@@ -117,9 +117,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Resources\profile.png" />
+    <None Include="Resources\fluent_membershipcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_employee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_product1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_deal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_account.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

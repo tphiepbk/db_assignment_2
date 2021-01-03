@@ -29,36 +29,46 @@ namespace db_assignment_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gunaPanel_menu = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pn_ui = new System.Windows.Forms.Panel();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gunaButton_thannhan = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gunaButton_khachhang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pn_titleui = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.uc_khachhang = new db_assignment_2.KhachHang();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gunaButton_thekhachhang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_taikhoan = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_nhanvien = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_khuyenmai = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_sanpham = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_hoadon = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_chinhanh = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.gunaButton_khachhang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaPanel_menu.SuspendLayout();
-            this.pn_ui.SuspendLayout();
+            this.pn_titleui.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanel_menu
             // 
             this.gunaPanel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.gunaPanel_menu.Controls.Add(this.guna2GradientButton4);
+            this.gunaPanel_menu.Controls.Add(this.pictureBox1);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_thekhachhang);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_taikhoan);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_nhanvien);
             this.gunaPanel_menu.Controls.Add(this.label1);
-            this.gunaPanel_menu.Controls.Add(this.guna2GradientButton3);
-            this.gunaPanel_menu.Controls.Add(this.guna2GradientButton2);
-            this.gunaPanel_menu.Controls.Add(this.guna2GradientButton1);
-            this.gunaPanel_menu.Controls.Add(this.gunaButton_thannhan);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_khuyenmai);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_sanpham);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_hoadon);
+            this.gunaPanel_menu.Controls.Add(this.gunaButton_chinhanh);
             this.gunaPanel_menu.Controls.Add(this.gunaButton_khachhang);
             this.gunaPanel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel_menu.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel_menu.Name = "gunaPanel_menu";
             this.gunaPanel_menu.ShadowDecoration.Parent = this.gunaPanel_menu;
-            this.gunaPanel_menu.Size = new System.Drawing.Size(200, 537);
+            this.gunaPanel_menu.Size = new System.Drawing.Size(200, 670);
             this.gunaPanel_menu.TabIndex = 9;
             // 
             // label1
@@ -67,117 +77,195 @@ namespace db_assignment_2
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(51, 507);
+            this.label1.Location = new System.Drawing.Point(51, 640);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 21);
             this.label1.TabIndex = 5;
             this.label1.Text = "Version 1.0";
             // 
-            // pn_ui
+            // pn_titleui
             // 
-            this.pn_ui.BackColor = System.Drawing.Color.White;
-            this.pn_ui.Controls.Add(this.uc_khachhang);
-            this.pn_ui.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pn_ui.Location = new System.Drawing.Point(166, 0);
-            this.pn_ui.Name = "pn_ui";
-            this.pn_ui.Size = new System.Drawing.Size(1227, 537);
-            this.pn_ui.TabIndex = 5;
+            this.pn_titleui.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.pn_titleui.Controls.Add(this.label3);
+            this.pn_titleui.Controls.Add(this.label2);
+            this.pn_titleui.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_titleui.Location = new System.Drawing.Point(200, 0);
+            this.pn_titleui.Name = "pn_titleui";
+            this.pn_titleui.Size = new System.Drawing.Size(1193, 100);
+            this.pn_titleui.TabIndex = 10;
             // 
-            // guna2GradientButton4
+            // panel1
             // 
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton4.Image")));
-            this.guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton4.Location = new System.Drawing.Point(0, 424);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(200, 45);
-            this.guna2GradientButton4.TabIndex = 6;
-            this.guna2GradientButton4.Text = "NHÂN VIÊN";
+            this.panel1.Controls.Add(this.uc_khachhang);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(200, 100);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1193, 570);
+            this.panel1.TabIndex = 11;
             // 
-            // guna2GradientButton3
+            // uc_khachhang
             // 
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton3.Image")));
-            this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton3.Location = new System.Drawing.Point(0, 373);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(200, 45);
-            this.guna2GradientButton3.TabIndex = 4;
-            this.guna2GradientButton3.Text = "KHUYẾN MÃI";
+            this.uc_khachhang.BackColor = System.Drawing.Color.White;
+            this.uc_khachhang.Location = new System.Drawing.Point(7, 6);
+            this.uc_khachhang.Name = "uc_khachhang";
+            this.uc_khachhang.Size = new System.Drawing.Size(1174, 525);
+            this.uc_khachhang.TabIndex = 0;
             // 
-            // guna2GradientButton2
+            // label2
             // 
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton2.Image")));
-            this.guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton2.Location = new System.Drawing.Point(0, 322);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(200, 45);
-            this.guna2GradientButton2.TabIndex = 3;
-            this.guna2GradientButton2.Text = "SẢN PHẨM";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(105, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Thái Phúc Hiệp";
             // 
-            // guna2GradientButton1
+            // label3
             // 
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton1.Image")));
-            this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(0, 271);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(200, 45);
-            this.guna2GradientButton1.TabIndex = 2;
-            this.guna2GradientButton1.Text = "HOÁ ĐƠN";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(498, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Khách hàng";
             // 
-            // gunaButton_thannhan
+            // gunaButton_thekhachhang
             // 
-            this.gunaButton_thannhan.CheckedState.Parent = this.gunaButton_thannhan;
-            this.gunaButton_thannhan.CustomImages.Parent = this.gunaButton_thannhan;
-            this.gunaButton_thannhan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
-            this.gunaButton_thannhan.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
-            this.gunaButton_thannhan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton_thannhan.ForeColor = System.Drawing.Color.White;
-            this.gunaButton_thannhan.HoverState.Parent = this.gunaButton_thannhan;
-            this.gunaButton_thannhan.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton_thannhan.Image")));
-            this.gunaButton_thannhan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaButton_thannhan.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton_thannhan.Location = new System.Drawing.Point(0, 220);
-            this.gunaButton_thannhan.Name = "gunaButton_thannhan";
-            this.gunaButton_thannhan.ShadowDecoration.Parent = this.gunaButton_thannhan;
-            this.gunaButton_thannhan.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_thannhan.TabIndex = 1;
-            this.gunaButton_thannhan.Text = "THÂN NHÂN";
-            this.gunaButton_thannhan.Click += new System.EventHandler(this.gunaButton_thannhan_Click);
+            this.gunaButton_thekhachhang.CheckedState.Parent = this.gunaButton_thekhachhang;
+            this.gunaButton_thekhachhang.CustomImages.Parent = this.gunaButton_thekhachhang;
+            this.gunaButton_thekhachhang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_thekhachhang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_thekhachhang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_thekhachhang.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_thekhachhang.HoverState.Parent = this.gunaButton_thekhachhang;
+            this.gunaButton_thekhachhang.Image = global::db_assignment_2.Properties.Resources.fluent_membershipcard;
+            this.gunaButton_thekhachhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_thekhachhang.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_thekhachhang.Location = new System.Drawing.Point(1, 553);
+            this.gunaButton_thekhachhang.Name = "gunaButton_thekhachhang";
+            this.gunaButton_thekhachhang.ShadowDecoration.Parent = this.gunaButton_thekhachhang;
+            this.gunaButton_thekhachhang.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_thekhachhang.TabIndex = 8;
+            this.gunaButton_thekhachhang.Text = "THẺ KHÁCH HÀNG";
+            // 
+            // gunaButton_taikhoan
+            // 
+            this.gunaButton_taikhoan.CheckedState.Parent = this.gunaButton_taikhoan;
+            this.gunaButton_taikhoan.CustomImages.Parent = this.gunaButton_taikhoan;
+            this.gunaButton_taikhoan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_taikhoan.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_taikhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_taikhoan.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_taikhoan.HoverState.Parent = this.gunaButton_taikhoan;
+            this.gunaButton_taikhoan.Image = global::db_assignment_2.Properties.Resources.fluent_account;
+            this.gunaButton_taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_taikhoan.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_taikhoan.Location = new System.Drawing.Point(1, 502);
+            this.gunaButton_taikhoan.Name = "gunaButton_taikhoan";
+            this.gunaButton_taikhoan.ShadowDecoration.Parent = this.gunaButton_taikhoan;
+            this.gunaButton_taikhoan.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_taikhoan.TabIndex = 7;
+            this.gunaButton_taikhoan.Text = "TÀI KHOẢN";
+            // 
+            // gunaButton_nhanvien
+            // 
+            this.gunaButton_nhanvien.CheckedState.Parent = this.gunaButton_nhanvien;
+            this.gunaButton_nhanvien.CustomImages.Parent = this.gunaButton_nhanvien;
+            this.gunaButton_nhanvien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_nhanvien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_nhanvien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_nhanvien.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_nhanvien.HoverState.Parent = this.gunaButton_nhanvien;
+            this.gunaButton_nhanvien.Image = global::db_assignment_2.Properties.Resources.fluent_employee;
+            this.gunaButton_nhanvien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_nhanvien.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_nhanvien.Location = new System.Drawing.Point(1, 349);
+            this.gunaButton_nhanvien.Name = "gunaButton_nhanvien";
+            this.gunaButton_nhanvien.ShadowDecoration.Parent = this.gunaButton_nhanvien;
+            this.gunaButton_nhanvien.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_nhanvien.TabIndex = 6;
+            this.gunaButton_nhanvien.Text = "NHÂN VIÊN";
+            // 
+            // gunaButton_khuyenmai
+            // 
+            this.gunaButton_khuyenmai.CheckedState.Parent = this.gunaButton_khuyenmai;
+            this.gunaButton_khuyenmai.CustomImages.Parent = this.gunaButton_khuyenmai;
+            this.gunaButton_khuyenmai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_khuyenmai.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_khuyenmai.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_khuyenmai.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_khuyenmai.HoverState.Parent = this.gunaButton_khuyenmai;
+            this.gunaButton_khuyenmai.Image = global::db_assignment_2.Properties.Resources.fluent_deal;
+            this.gunaButton_khuyenmai.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_khuyenmai.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_khuyenmai.Location = new System.Drawing.Point(1, 451);
+            this.gunaButton_khuyenmai.Name = "gunaButton_khuyenmai";
+            this.gunaButton_khuyenmai.ShadowDecoration.Parent = this.gunaButton_khuyenmai;
+            this.gunaButton_khuyenmai.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_khuyenmai.TabIndex = 4;
+            this.gunaButton_khuyenmai.Text = "KHUYẾN MÃI";
+            // 
+            // gunaButton_sanpham
+            // 
+            this.gunaButton_sanpham.CheckedState.Parent = this.gunaButton_sanpham;
+            this.gunaButton_sanpham.CustomImages.Parent = this.gunaButton_sanpham;
+            this.gunaButton_sanpham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_sanpham.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_sanpham.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_sanpham.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_sanpham.HoverState.Parent = this.gunaButton_sanpham;
+            this.gunaButton_sanpham.Image = global::db_assignment_2.Properties.Resources.fluent_product;
+            this.gunaButton_sanpham.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_sanpham.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_sanpham.Location = new System.Drawing.Point(1, 400);
+            this.gunaButton_sanpham.Name = "gunaButton_sanpham";
+            this.gunaButton_sanpham.ShadowDecoration.Parent = this.gunaButton_sanpham;
+            this.gunaButton_sanpham.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_sanpham.TabIndex = 3;
+            this.gunaButton_sanpham.Text = "SẢN PHẨM";
+            // 
+            // gunaButton_hoadon
+            // 
+            this.gunaButton_hoadon.CheckedState.Parent = this.gunaButton_hoadon;
+            this.gunaButton_hoadon.CustomImages.Parent = this.gunaButton_hoadon;
+            this.gunaButton_hoadon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_hoadon.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_hoadon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_hoadon.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_hoadon.HoverState.Parent = this.gunaButton_hoadon;
+            this.gunaButton_hoadon.Image = global::db_assignment_2.Properties.Resources.fluent_bill;
+            this.gunaButton_hoadon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_hoadon.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_hoadon.Location = new System.Drawing.Point(0, 247);
+            this.gunaButton_hoadon.Name = "gunaButton_hoadon";
+            this.gunaButton_hoadon.ShadowDecoration.Parent = this.gunaButton_hoadon;
+            this.gunaButton_hoadon.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_hoadon.TabIndex = 2;
+            this.gunaButton_hoadon.Text = "HOÁ ĐƠN";
+            // 
+            // gunaButton_chinhanh
+            // 
+            this.gunaButton_chinhanh.CheckedState.Parent = this.gunaButton_chinhanh;
+            this.gunaButton_chinhanh.CustomImages.Parent = this.gunaButton_chinhanh;
+            this.gunaButton_chinhanh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(146)))));
+            this.gunaButton_chinhanh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(150)))), ((int)(((byte)(213)))));
+            this.gunaButton_chinhanh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_chinhanh.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_chinhanh.HoverState.Parent = this.gunaButton_chinhanh;
+            this.gunaButton_chinhanh.Image = global::db_assignment_2.Properties.Resources.fluent_branch;
+            this.gunaButton_chinhanh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_chinhanh.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_chinhanh.Location = new System.Drawing.Point(0, 298);
+            this.gunaButton_chinhanh.Name = "gunaButton_chinhanh";
+            this.gunaButton_chinhanh.ShadowDecoration.Parent = this.gunaButton_chinhanh;
+            this.gunaButton_chinhanh.Size = new System.Drawing.Size(200, 45);
+            this.gunaButton_chinhanh.TabIndex = 1;
+            this.gunaButton_chinhanh.Text = "CHI NHÁNH";
+            this.gunaButton_chinhanh.Click += new System.EventHandler(this.gunaButton_thannhan_Click);
             // 
             // gunaButton_khachhang
             // 
@@ -188,10 +276,10 @@ namespace db_assignment_2
             this.gunaButton_khachhang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton_khachhang.ForeColor = System.Drawing.Color.White;
             this.gunaButton_khachhang.HoverState.Parent = this.gunaButton_khachhang;
-            this.gunaButton_khachhang.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton_khachhang.Image")));
+            this.gunaButton_khachhang.Image = global::db_assignment_2.Properties.Resources.fluent_customer;
             this.gunaButton_khachhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gunaButton_khachhang.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton_khachhang.Location = new System.Drawing.Point(0, 169);
+            this.gunaButton_khachhang.Location = new System.Drawing.Point(0, 196);
             this.gunaButton_khachhang.Name = "gunaButton_khachhang";
             this.gunaButton_khachhang.ShadowDecoration.Parent = this.gunaButton_khachhang;
             this.gunaButton_khachhang.Size = new System.Drawing.Size(200, 45);
@@ -199,43 +287,55 @@ namespace db_assignment_2
             this.gunaButton_khachhang.Text = "KHÁCH HÀNG";
             this.gunaButton_khachhang.Click += new System.EventHandler(this.gunaButton_khachhang_Click);
             // 
-            // uc_khachhang
+            // pictureBox1
             // 
-            this.uc_khachhang.BackColor = System.Drawing.Color.White;
-            this.uc_khachhang.Location = new System.Drawing.Point(40, 12);
-            this.uc_khachhang.Name = "uc_khachhang";
-            this.uc_khachhang.Size = new System.Drawing.Size(1174, 525);
-            this.uc_khachhang.TabIndex = 0;
+            this.pictureBox1.Location = new System.Drawing.Point(36, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 115);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1393, 537);
+            this.ClientSize = new System.Drawing.Size(1393, 670);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pn_titleui);
             this.Controls.Add(this.gunaPanel_menu);
-            this.Controls.Add(this.pn_ui);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gunaPanel_menu.ResumeLayout(false);
             this.gunaPanel_menu.PerformLayout();
-            this.pn_ui.ResumeLayout(false);
+            this.pn_titleui.ResumeLayout(false);
+            this.pn_titleui.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel gunaPanel_menu;
-        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_thannhan;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_chinhanh;
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_khachhang;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_sanpham;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_hoadon;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_khuyenmai;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_nhanvien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pn_ui;
+        private System.Windows.Forms.Panel pn_titleui;
+        private System.Windows.Forms.Panel panel1;
         private KhachHang uc_khachhang;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_taikhoan;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2GradientButton gunaButton_thekhachhang;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
