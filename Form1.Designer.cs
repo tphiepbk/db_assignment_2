@@ -91,7 +91,7 @@ namespace db_assignment_2
             this.gunaButton_thekhachhang.Name = "gunaButton_thekhachhang";
             this.gunaButton_thekhachhang.ShadowDecoration.Parent = this.gunaButton_thekhachhang;
             this.gunaButton_thekhachhang.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_thekhachhang.TabIndex = 8;
+            this.gunaButton_thekhachhang.TabIndex = 7;
             this.gunaButton_thekhachhang.Text = "THẺ KHÁCH HÀNG";
             // 
             // gunaButton_taikhoan
@@ -106,11 +106,12 @@ namespace db_assignment_2
             this.gunaButton_taikhoan.Image = global::db_assignment_2.Properties.Resources.fluent_account;
             this.gunaButton_taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gunaButton_taikhoan.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton_taikhoan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gunaButton_taikhoan.Location = new System.Drawing.Point(1, 502);
             this.gunaButton_taikhoan.Name = "gunaButton_taikhoan";
             this.gunaButton_taikhoan.ShadowDecoration.Parent = this.gunaButton_taikhoan;
             this.gunaButton_taikhoan.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_taikhoan.TabIndex = 7;
+            this.gunaButton_taikhoan.TabIndex = 6;
             this.gunaButton_taikhoan.Text = "TÀI KHOẢN";
             // 
             // gunaButton_nhanvien
@@ -129,7 +130,7 @@ namespace db_assignment_2
             this.gunaButton_nhanvien.Name = "gunaButton_nhanvien";
             this.gunaButton_nhanvien.ShadowDecoration.Parent = this.gunaButton_nhanvien;
             this.gunaButton_nhanvien.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_nhanvien.TabIndex = 6;
+            this.gunaButton_nhanvien.TabIndex = 3;
             this.gunaButton_nhanvien.Text = "NHÂN VIÊN";
             // 
             // label1
@@ -160,7 +161,7 @@ namespace db_assignment_2
             this.gunaButton_khuyenmai.Name = "gunaButton_khuyenmai";
             this.gunaButton_khuyenmai.ShadowDecoration.Parent = this.gunaButton_khuyenmai;
             this.gunaButton_khuyenmai.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_khuyenmai.TabIndex = 4;
+            this.gunaButton_khuyenmai.TabIndex = 5;
             this.gunaButton_khuyenmai.Text = "KHUYẾN MÃI";
             // 
             // gunaButton_sanpham
@@ -179,7 +180,7 @@ namespace db_assignment_2
             this.gunaButton_sanpham.Name = "gunaButton_sanpham";
             this.gunaButton_sanpham.ShadowDecoration.Parent = this.gunaButton_sanpham;
             this.gunaButton_sanpham.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_sanpham.TabIndex = 3;
+            this.gunaButton_sanpham.TabIndex = 4;
             this.gunaButton_sanpham.Text = "SẢN PHẨM";
             // 
             // gunaButton_hoadon
@@ -198,7 +199,7 @@ namespace db_assignment_2
             this.gunaButton_hoadon.Name = "gunaButton_hoadon";
             this.gunaButton_hoadon.ShadowDecoration.Parent = this.gunaButton_hoadon;
             this.gunaButton_hoadon.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_hoadon.TabIndex = 2;
+            this.gunaButton_hoadon.TabIndex = 1;
             this.gunaButton_hoadon.Text = "HOÁ ĐƠN";
             // 
             // gunaButton_chinhanh
@@ -217,7 +218,7 @@ namespace db_assignment_2
             this.gunaButton_chinhanh.Name = "gunaButton_chinhanh";
             this.gunaButton_chinhanh.ShadowDecoration.Parent = this.gunaButton_chinhanh;
             this.gunaButton_chinhanh.Size = new System.Drawing.Size(200, 45);
-            this.gunaButton_chinhanh.TabIndex = 1;
+            this.gunaButton_chinhanh.TabIndex = 2;
             this.gunaButton_chinhanh.Text = "CHI NHÁNH";
             // 
             // gunaButton_khachhang
@@ -268,7 +269,7 @@ namespace db_assignment_2
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bài tập lớn số 2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gunaPanel_menu.ResumeLayout(false);
             this.gunaPanel_menu.PerformLayout();

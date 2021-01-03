@@ -121,17 +121,29 @@
   <data name="fluent_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_customer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_deal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_deal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_product1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent_membershipcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_membershipcard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fluent_employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_employee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fluent_insert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_insert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fluent_bill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_bill1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_product1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_120x120hcmut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\120x120hcmut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent_deal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_deal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fluent_branch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_branch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,10 +151,7 @@
   <data name="fluent_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_membershipcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_membershipcard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_120x120hcmut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\120x120hcmut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_change" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_change.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

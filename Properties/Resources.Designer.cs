@@ -103,6 +103,16 @@ namespace db_assignment_2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fluent_change {
+            get {
+                object obj = ResourceManager.GetObject("fluent_change", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent_customer {
             get {
                 object obj = ResourceManager.GetObject("fluent_customer", resourceCulture);
@@ -123,9 +133,29 @@ namespace db_assignment_2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fluent_delete {
+            get {
+                object obj = ResourceManager.GetObject("fluent_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent_employee {
             get {
                 object obj = ResourceManager.GetObject("fluent_employee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent_insert {
+            get {
+                object obj = ResourceManager.GetObject("fluent_insert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

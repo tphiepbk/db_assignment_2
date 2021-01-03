@@ -50,9 +50,9 @@ namespace db_assignment_2
             this.label8 = new System.Windows.Forms.Label();
             this.lb_count = new System.Windows.Forms.Label();
             this.gunaDataGridView_main = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gunaButton_themkhachhang = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaButton_themkhachhang = new Guna.UI2.WinForms.Guna2Button();
             this.gb_thongtinkhachhang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView_main)).BeginInit();
             this.SuspendLayout();
@@ -273,21 +273,23 @@ namespace db_assignment_2
             this.gunaDataGridView_main.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDataGridView_main.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gunaDataGridView_main_CellMouseClick);
             // 
-            // gunaButton_themkhachhang
+            // guna2Button2
             // 
-            this.gunaButton_themkhachhang.CheckedState.Parent = this.gunaButton_themkhachhang;
-            this.gunaButton_themkhachhang.CustomImages.Parent = this.gunaButton_themkhachhang;
-            this.gunaButton_themkhachhang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(154)))), ((int)(((byte)(110)))));
-            this.gunaButton_themkhachhang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton_themkhachhang.ForeColor = System.Drawing.Color.White;
-            this.gunaButton_themkhachhang.HoverState.Parent = this.gunaButton_themkhachhang;
-            this.gunaButton_themkhachhang.Location = new System.Drawing.Point(837, 233);
-            this.gunaButton_themkhachhang.Name = "gunaButton_themkhachhang";
-            this.gunaButton_themkhachhang.ShadowDecoration.Parent = this.gunaButton_themkhachhang;
-            this.gunaButton_themkhachhang.Size = new System.Drawing.Size(71, 35);
-            this.gunaButton_themkhachhang.TabIndex = 10;
-            this.gunaButton_themkhachhang.Text = "Thêm";
-            this.gunaButton_themkhachhang.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(140)))), ((int)(((byte)(186)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::db_assignment_2.Properties.Resources.fluent_change;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.Location = new System.Drawing.Point(1074, 255);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(85, 35);
+            this.guna2Button2.TabIndex = 12;
+            this.guna2Button2.Text = "Sửa";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2Button1
             // 
@@ -297,27 +299,34 @@ namespace db_assignment_2
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(964, 233);
+            this.guna2Button1.Image = global::db_assignment_2.Properties.Resources.fluent_delete;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Location = new System.Drawing.Point(960, 255);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(71, 35);
+            this.guna2Button1.Size = new System.Drawing.Size(85, 35);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "Xoá";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2Button2
+            // gunaButton_themkhachhang
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(140)))), ((int)(((byte)(186)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(1088, 233);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(71, 35);
-            this.guna2Button2.TabIndex = 12;
-            this.guna2Button2.Text = "Sửa";
+            this.gunaButton_themkhachhang.CheckedState.Parent = this.gunaButton_themkhachhang;
+            this.gunaButton_themkhachhang.CustomImages.Parent = this.gunaButton_themkhachhang;
+            this.gunaButton_themkhachhang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(154)))), ((int)(((byte)(110)))));
+            this.gunaButton_themkhachhang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_themkhachhang.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_themkhachhang.HoverState.Parent = this.gunaButton_themkhachhang;
+            this.gunaButton_themkhachhang.Image = global::db_assignment_2.Properties.Resources.fluent_insert;
+            this.gunaButton_themkhachhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_themkhachhang.Location = new System.Drawing.Point(837, 255);
+            this.gunaButton_themkhachhang.Name = "gunaButton_themkhachhang";
+            this.gunaButton_themkhachhang.ShadowDecoration.Parent = this.gunaButton_themkhachhang;
+            this.gunaButton_themkhachhang.Size = new System.Drawing.Size(85, 35);
+            this.gunaButton_themkhachhang.TabIndex = 10;
+            this.gunaButton_themkhachhang.Text = "Thêm";
+            this.gunaButton_themkhachhang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton_themkhachhang.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // KhachHang
             // 
