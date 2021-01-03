@@ -30,31 +30,27 @@ namespace db_assignment_2
         private void InitializeComponent()
         {
             this.gunaPanel_menu = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pn_titleui = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.uc_khachhang = new db_assignment_2.KhachHang();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pb_logo = new System.Windows.Forms.PictureBox();
             this.gunaButton_thekhachhang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_taikhoan = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_nhanvien = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaButton_khuyenmai = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_sanpham = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_hoadon = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_chinhanh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_khachhang = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_khachhang = new db_assignment_2.KhachHang();
             this.gunaPanel_menu.SuspendLayout();
-            this.pn_titleui.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanel_menu
             // 
             this.gunaPanel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.gunaPanel_menu.Controls.Add(this.pictureBox1);
+            this.gunaPanel_menu.Controls.Add(this.pb_logo);
             this.gunaPanel_menu.Controls.Add(this.gunaButton_thekhachhang);
             this.gunaPanel_menu.Controls.Add(this.gunaButton_taikhoan);
             this.gunaPanel_menu.Controls.Add(this.gunaButton_nhanvien);
@@ -71,67 +67,13 @@ namespace db_assignment_2
             this.gunaPanel_menu.Size = new System.Drawing.Size(200, 670);
             this.gunaPanel_menu.TabIndex = 9;
             // 
-            // label1
+            // pb_logo
             // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(51, 640);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 21);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Version 1.0";
-            // 
-            // pn_titleui
-            // 
-            this.pn_titleui.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.pn_titleui.Controls.Add(this.label3);
-            this.pn_titleui.Controls.Add(this.label2);
-            this.pn_titleui.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_titleui.Location = new System.Drawing.Point(200, 0);
-            this.pn_titleui.Name = "pn_titleui";
-            this.pn_titleui.Size = new System.Drawing.Size(1193, 100);
-            this.pn_titleui.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.uc_khachhang);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(200, 100);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1193, 570);
-            this.panel1.TabIndex = 11;
-            // 
-            // uc_khachhang
-            // 
-            this.uc_khachhang.BackColor = System.Drawing.Color.White;
-            this.uc_khachhang.Location = new System.Drawing.Point(7, 6);
-            this.uc_khachhang.Name = "uc_khachhang";
-            this.uc_khachhang.Size = new System.Drawing.Size(1174, 525);
-            this.uc_khachhang.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(105, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Thái Phúc Hiệp";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(498, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Khách hàng";
+            this.pb_logo.Location = new System.Drawing.Point(40, 30);
+            this.pb_logo.Name = "pb_logo";
+            this.pb_logo.Size = new System.Drawing.Size(120, 120);
+            this.pb_logo.TabIndex = 3;
+            this.pb_logo.TabStop = false;
             // 
             // gunaButton_thekhachhang
             // 
@@ -189,6 +131,18 @@ namespace db_assignment_2
             this.gunaButton_nhanvien.Size = new System.Drawing.Size(200, 45);
             this.gunaButton_nhanvien.TabIndex = 6;
             this.gunaButton_nhanvien.Text = "NHÂN VIÊN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(51, 640);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Version 1.0";
             // 
             // gunaButton_khuyenmai
             // 
@@ -265,7 +219,6 @@ namespace db_assignment_2
             this.gunaButton_chinhanh.Size = new System.Drawing.Size(200, 45);
             this.gunaButton_chinhanh.TabIndex = 1;
             this.gunaButton_chinhanh.Text = "CHI NHÁNH";
-            this.gunaButton_chinhanh.Click += new System.EventHandler(this.gunaButton_thannhan_Click);
             // 
             // gunaButton_khachhang
             // 
@@ -287,13 +240,22 @@ namespace db_assignment_2
             this.gunaButton_khachhang.Text = "KHÁCH HÀNG";
             this.gunaButton_khachhang.Click += new System.EventHandler(this.gunaButton_khachhang_Click);
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(36, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 115);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Controls.Add(this.uc_khachhang);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1193, 670);
+            this.panel1.TabIndex = 11;
+            // 
+            // uc_khachhang
+            // 
+            this.uc_khachhang.BackColor = System.Drawing.Color.White;
+            this.uc_khachhang.Location = new System.Drawing.Point(7, 12);
+            this.uc_khachhang.Name = "uc_khachhang";
+            this.uc_khachhang.Size = new System.Drawing.Size(1174, 642);
+            this.uc_khachhang.TabIndex = 0;
             // 
             // Form1
             // 
@@ -302,7 +264,6 @@ namespace db_assignment_2
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1393, 670);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pn_titleui);
             this.Controls.Add(this.gunaPanel_menu);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -311,10 +272,8 @@ namespace db_assignment_2
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gunaPanel_menu.ResumeLayout(false);
             this.gunaPanel_menu.PerformLayout();
-            this.pn_titleui.ResumeLayout(false);
-            this.pn_titleui.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,14 +287,11 @@ namespace db_assignment_2
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_khuyenmai;
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_nhanvien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pn_titleui;
         private System.Windows.Forms.Panel panel1;
-        private KhachHang uc_khachhang;
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_taikhoan;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_thekhachhang;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_logo;
+        private KhachHang uc_khachhang;
     }
 }
 

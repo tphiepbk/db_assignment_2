@@ -197,7 +197,7 @@ namespace db_assignment_2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 495);
+            this.label8.Location = new System.Drawing.Point(10, 615);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(157, 17);
             this.label8.TabIndex = 5;
@@ -207,7 +207,7 @@ namespace db_assignment_2
             // 
             this.lb_count.AutoSize = true;
             this.lb_count.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_count.Location = new System.Drawing.Point(162, 495);
+            this.lb_count.Location = new System.Drawing.Point(162, 615);
             this.lb_count.Name = "lb_count";
             this.lb_count.Size = new System.Drawing.Size(15, 17);
             this.lb_count.TabIndex = 6;
@@ -232,7 +232,7 @@ namespace db_assignment_2
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridView_main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView_main.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -243,11 +243,11 @@ namespace db_assignment_2
             this.gunaDataGridView_main.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView_main.EnableHeadersVisualStyles = false;
             this.gunaDataGridView_main.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView_main.Location = new System.Drawing.Point(13, 24);
+            this.gunaDataGridView_main.Location = new System.Drawing.Point(13, 13);
             this.gunaDataGridView_main.Name = "gunaDataGridView_main";
             this.gunaDataGridView_main.RowHeadersVisible = false;
             this.gunaDataGridView_main.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView_main.Size = new System.Drawing.Size(804, 456);
+            this.gunaDataGridView_main.Size = new System.Drawing.Size(804, 590);
             this.gunaDataGridView_main.TabIndex = 9;
             this.gunaDataGridView_main.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gunaDataGridView_main.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -261,7 +261,7 @@ namespace db_assignment_2
             this.gunaDataGridView_main.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gunaDataGridView_main.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gunaDataGridView_main.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView_main.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView_main.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gunaDataGridView_main.ThemeStyle.HeaderStyle.Height = 4;
             this.gunaDataGridView_main.ThemeStyle.ReadOnly = false;
             this.gunaDataGridView_main.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -332,7 +332,7 @@ namespace db_assignment_2
             this.Controls.Add(this.label8);
             this.Controls.Add(this.gb_thongtinkhachhang);
             this.Name = "KhachHang";
-            this.Size = new System.Drawing.Size(1174, 525);
+            this.Size = new System.Drawing.Size(1174, 642);
             this.Load += new System.EventHandler(this.KhachHang_Load);
             this.gb_thongtinkhachhang.ResumeLayout(false);
             this.gb_thongtinkhachhang.PerformLayout();
