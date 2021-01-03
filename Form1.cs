@@ -21,13 +21,22 @@ namespace db_assignment_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            uc_khachhang.Visible = false;
-
             pb_logo.Image = Properties.Resources._120x120hcmut;
+
+            uc_khachhang.Visible = false;
+            uc_nhanvien.Visible = false;
+
         }
         private void gunaButton_khachhang_Click(object sender, EventArgs e)
         {
             uc_khachhang.Visible = true;
+            uc_nhanvien.Visible = false;
+        }
+
+        private void gunaButton_nhanvien_Click(object sender, EventArgs e)
+        {
+            uc_nhanvien.Visible = true;
+            uc_khachhang.Visible = false;
         }
     }
 }

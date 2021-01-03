@@ -41,6 +41,7 @@ namespace db_assignment_2
             this.gunaButton_chinhanh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_khachhang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_nhanvien = new db_assignment_2.Nhanvien();
             this.uc_khachhang = new db_assignment_2.KhachHang();
             this.gunaPanel_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
@@ -132,6 +133,7 @@ namespace db_assignment_2
             this.gunaButton_nhanvien.Size = new System.Drawing.Size(200, 45);
             this.gunaButton_nhanvien.TabIndex = 3;
             this.gunaButton_nhanvien.Text = "NHÂN VIÊN";
+            this.gunaButton_nhanvien.Click += new System.EventHandler(this.gunaButton_nhanvien_Click);
             // 
             // label1
             // 
@@ -243,12 +245,20 @@ namespace db_assignment_2
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.uc_nhanvien);
             this.panel1.Controls.Add(this.uc_khachhang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1193, 670);
             this.panel1.TabIndex = 11;
+            // 
+            // uc_nhanvien
+            // 
+            this.uc_nhanvien.Location = new System.Drawing.Point(120, 82);
+            this.uc_nhanvien.Name = "uc_nhanvien";
+            this.uc_nhanvien.Size = new System.Drawing.Size(725, 465);
+            this.uc_nhanvien.TabIndex = 1;
             // 
             // uc_khachhang
             // 
@@ -293,6 +303,7 @@ namespace db_assignment_2
         private Guna.UI2.WinForms.Guna2GradientButton gunaButton_thekhachhang;
         private System.Windows.Forms.PictureBox pb_logo;
         private KhachHang uc_khachhang;
+        private Nhanvien uc_nhanvien;
     }
 }
 
