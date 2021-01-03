@@ -49,7 +49,6 @@ namespace db_assignment_2
             this.label9 = new System.Windows.Forms.Label();
             this.tb_ho = new System.Windows.Forms.TextBox();
             this.dtp_ngaysinh = new System.Windows.Forms.DateTimePicker();
-            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_gioitinh
@@ -216,22 +215,11 @@ namespace db_assignment_2
             this.dtp_ngaysinh.Size = new System.Drawing.Size(200, 20);
             this.dtp_ngaysinh.TabIndex = 20;
             // 
-            // btn
-            // 
-            this.btn.Location = new System.Drawing.Point(141, 271);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(75, 23);
-            this.btn.TabIndex = 21;
-            this.btn.Text = "button1";
-            this.btn.UseVisualStyleBackColor = true;
-            this.btn.Click += new System.EventHandler(this.btn_Click);
-            // 
             // FormThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 313);
-            this.Controls.Add(this.btn);
             this.Controls.Add(this.dtp_ngaysinh);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tb_ho);
@@ -281,6 +269,5 @@ namespace db_assignment_2
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_ho;
         private System.Windows.Forms.DateTimePicker dtp_ngaysinh;
-        private System.Windows.Forms.Button btn;
     }
 }

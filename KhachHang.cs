@@ -90,5 +90,10 @@ namespace db_assignment_2
             tb_sdt.Text = gunaDataGridView_main.Rows[rowIndex].Cells[7].Value.ToString();
             tb_email.Text = gunaDataGridView_main.Rows[rowIndex].Cells[8].Value.ToString();
         }
+
+        private void gunaButton_taidulieu_Click(object sender, EventArgs e)
+        {
+            loadData();
+        }
     }
 }

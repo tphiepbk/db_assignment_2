@@ -210,5 +210,8 @@
   <ItemGroup>
     <None Include="Resources\fluent_change.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_reload.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
