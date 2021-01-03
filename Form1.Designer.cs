@@ -30,22 +30,22 @@ namespace db_assignment_2
         private void InitializeComponent()
         {
             this.gunaPanel_menu = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.gunaButton_thekhachhang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_taikhoan = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_nhanvien = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.gunaButton_khuyenmai = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_sanpham = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_hoadon = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_chinhanh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaButton_khachhang = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.uc_nhanvien = new db_assignment_2.Nhanvien();
             this.uc_khachhang = new db_assignment_2.KhachHang();
+            this.uc_nhanvien = new db_assignment_2.Nhanvien();
             this.gunaPanel_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanel_menu
@@ -67,6 +67,28 @@ namespace db_assignment_2
             this.gunaPanel_menu.ShadowDecoration.Parent = this.gunaPanel_menu;
             this.gunaPanel_menu.Size = new System.Drawing.Size(200, 670);
             this.gunaPanel_menu.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(51, 640);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Version 1.0";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.uc_nhanvien);
+            this.panel1.Controls.Add(this.uc_khachhang);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1193, 670);
+            this.panel1.TabIndex = 11;
             // 
             // pb_logo
             // 
@@ -134,18 +156,6 @@ namespace db_assignment_2
             this.gunaButton_nhanvien.TabIndex = 3;
             this.gunaButton_nhanvien.Text = "NHÂN VIÊN";
             this.gunaButton_nhanvien.Click += new System.EventHandler(this.gunaButton_nhanvien_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(51, 640);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 21);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Version 1.0";
             // 
             // gunaButton_khuyenmai
             // 
@@ -243,30 +253,23 @@ namespace db_assignment_2
             this.gunaButton_khachhang.Text = "KHÁCH HÀNG";
             this.gunaButton_khachhang.Click += new System.EventHandler(this.gunaButton_khachhang_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.uc_nhanvien);
-            this.panel1.Controls.Add(this.uc_khachhang);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1193, 670);
-            this.panel1.TabIndex = 11;
-            // 
-            // uc_nhanvien
-            // 
-            this.uc_nhanvien.Location = new System.Drawing.Point(120, 82);
-            this.uc_nhanvien.Name = "uc_nhanvien";
-            this.uc_nhanvien.Size = new System.Drawing.Size(725, 465);
-            this.uc_nhanvien.TabIndex = 1;
-            // 
             // uc_khachhang
             // 
             this.uc_khachhang.BackColor = System.Drawing.Color.White;
-            this.uc_khachhang.Location = new System.Drawing.Point(7, 12);
+            this.uc_khachhang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_khachhang.Location = new System.Drawing.Point(0, 0);
             this.uc_khachhang.Name = "uc_khachhang";
-            this.uc_khachhang.Size = new System.Drawing.Size(1174, 642);
+            this.uc_khachhang.Size = new System.Drawing.Size(1193, 670);
             this.uc_khachhang.TabIndex = 0;
+            // 
+            // uc_nhanvien
+            // 
+            this.uc_nhanvien.BackColor = System.Drawing.Color.White;
+            this.uc_nhanvien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_nhanvien.Location = new System.Drawing.Point(0, 0);
+            this.uc_nhanvien.Name = "uc_nhanvien";
+            this.uc_nhanvien.Size = new System.Drawing.Size(1193, 670);
+            this.uc_nhanvien.TabIndex = 1;
             // 
             // Form1
             // 
@@ -283,8 +286,8 @@ namespace db_assignment_2
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gunaPanel_menu.ResumeLayout(false);
             this.gunaPanel_menu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.ResumeLayout(false);
 
         }
