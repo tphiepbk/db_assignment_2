@@ -23,20 +23,110 @@ namespace db_assignment_2
         {
             pb_logo.Image = Properties.Resources._120x120hcmut;
 
-            uc_khachhang.Visible = false;
+            uc_khachhang.Visible = true;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
             uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
 
         }
         private void gunaButton_khachhang_Click(object sender, EventArgs e)
         {
             uc_khachhang.Visible = true;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
             uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
         }
 
         private void gunaButton_nhanvien_Click(object sender, EventArgs e)
         {
-            uc_nhanvien.Visible = true;
             uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = true;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_hoadon_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = true;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_chinhanh_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = true;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_sanpham_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = true;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_khuyenmai_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = true;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_taikhoan_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = true;
+            uc_thekhachhang.Visible = false;
+        }
+
+        private void gunaButton_thekhachhang_Click(object sender, EventArgs e)
+        {
+            uc_khachhang.Visible = false;
+            uc_hoadon.Visible = false;
+            uc_chinhanh.Visible = false;
+            uc_nhanvien.Visible = false;
+            uc_sanpham.Visible = false;
+            uc_khuyenmai.Visible = false;
+            uc_taikhoan.Visible = false;
+            uc_thekhachhang.Visible = true;
         }
     }
 }

@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiNhanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChiNhanh.Designer.cs">
+      <DependentUpon>ChiNhanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnectionString.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -68,11 +74,23 @@
     <Compile Include="FormThemKhachHang.Designer.cs">
       <DependentUpon>FormThemKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhuyenMai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KhuyenMai.Designer.cs">
+      <DependentUpon>KhuyenMai.cs</DependentUpon>
     </Compile>
     <Compile Include="Nhanvien.cs">
       <SubType>UserControl</SubType>
@@ -87,14 +105,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TheKhachHang.Designer.cs">
+      <DependentUpon>TheKhachHang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiNhanh.resx">
+      <DependentUpon>ChiNhanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemKhachHang.resx">
       <DependentUpon>FormThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhuyenMai.resx">
+      <DependentUpon>KhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
@@ -103,6 +148,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheKhachHang.resx">
+      <DependentUpon>TheKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
