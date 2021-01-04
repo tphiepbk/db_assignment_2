@@ -159,16 +159,14 @@ namespace db_assignment_2
             }
 
             loadData();
-
-            /*
-            var f_xoataikhoan = new FormXoaTaiKhoan();
-            f_xoataikhoan.Show();
-            */
         }
 
         private void gunaButton_capnhattaikhoan_Click(object sender, EventArgs e)
         {
-            var f_capnhattaikhoan = new FormCapNhatTaiKhoan();
+            int current_row_index = gunaDataGridView_main.CurrentCell.RowIndex;
+            string current_username = gunaDataGridView_main.Rows[current_row_index].Cells[0].Value.ToString();
+
+            var f_capnhattaikhoan = new FormCapNhatTaiKhoan(current_username);
             f_capnhattaikhoan.Show();
         }
 
