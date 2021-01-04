@@ -29,12 +29,12 @@ namespace db_assignment_2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_count = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,24 +47,29 @@ namespace db_assignment_2
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaGroupBox_thongtintaikhoan = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.gunaDataGridView_main = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gunaRadioButton_quantri_yes = new Guna.UI2.WinForms.Guna2RadioButton();
             this.gunaRadioButton_quantri_no = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.gunaRadioButton_quantri_yes = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.gunaDataGridView_main = new Guna.UI2.WinForms.Guna2DataGridView();
             this.gunaGroupBox_datatable = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.gunaDataGridView_adminlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lb_admin_count = new System.Windows.Forms.Label();
+            this.gunaDataGridView_adminlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.gunaButton_filter = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaButton_find = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_taidulieu = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_capnhattaikhoan = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_xoataikhoan = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_themtaikhoan = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaTextBox_keyword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.rb_username = new System.Windows.Forms.RadioButton();
+            this.rb_manhanvien = new System.Windows.Forms.RadioButton();
             this.gunaGroupBox_thongtintaikhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView_main)).BeginInit();
             this.gunaGroupBox_datatable.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView_adminlist)).BeginInit();
+            this.guna2GroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_count
@@ -187,34 +192,70 @@ namespace db_assignment_2
             this.gunaGroupBox_thongtintaikhoan.Text = "Thông tin tài khoản";
             this.gunaGroupBox_thongtintaikhoan.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
+            // gunaRadioButton_quantri_no
+            // 
+            this.gunaRadioButton_quantri_no.AutoSize = true;
+            this.gunaRadioButton_quantri_no.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton_quantri_no.CheckedState.BorderThickness = 0;
+            this.gunaRadioButton_quantri_no.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton_quantri_no.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.gunaRadioButton_quantri_no.CheckedState.InnerOffset = -4;
+            this.gunaRadioButton_quantri_no.Location = new System.Drawing.Point(154, 102);
+            this.gunaRadioButton_quantri_no.Name = "gunaRadioButton_quantri_no";
+            this.gunaRadioButton_quantri_no.Size = new System.Drawing.Size(60, 19);
+            this.gunaRadioButton_quantri_no.TabIndex = 24;
+            this.gunaRadioButton_quantri_no.Text = "Không";
+            this.gunaRadioButton_quantri_no.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gunaRadioButton_quantri_no.UncheckedState.BorderThickness = 2;
+            this.gunaRadioButton_quantri_no.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.gunaRadioButton_quantri_no.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // gunaRadioButton_quantri_yes
+            // 
+            this.gunaRadioButton_quantri_yes.AutoSize = true;
+            this.gunaRadioButton_quantri_yes.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton_quantri_yes.CheckedState.BorderThickness = 0;
+            this.gunaRadioButton_quantri_yes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton_quantri_yes.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.gunaRadioButton_quantri_yes.CheckedState.InnerOffset = -4;
+            this.gunaRadioButton_quantri_yes.Location = new System.Drawing.Point(108, 102);
+            this.gunaRadioButton_quantri_yes.Name = "gunaRadioButton_quantri_yes";
+            this.gunaRadioButton_quantri_yes.Size = new System.Drawing.Size(40, 19);
+            this.gunaRadioButton_quantri_yes.TabIndex = 23;
+            this.gunaRadioButton_quantri_yes.Text = "Có";
+            this.gunaRadioButton_quantri_yes.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gunaRadioButton_quantri_yes.UncheckedState.BorderThickness = 2;
+            this.gunaRadioButton_quantri_yes.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.gunaRadioButton_quantri_yes.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
             // gunaDataGridView_main
             // 
             this.gunaDataGridView_main.AllowUserToAddRows = false;
             this.gunaDataGridView_main.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
-            this.gunaDataGridView_main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
+            this.gunaDataGridView_main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gunaDataGridView_main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView_main.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView_main.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView_main.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView_main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView_main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView_main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gunaDataGridView_main.ColumnHeadersHeight = 10;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(210)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView_main.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(210)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView_main.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView_main.EnableHeadersVisualStyles = false;
             this.gunaDataGridView_main.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
             this.gunaDataGridView_main.Location = new System.Drawing.Point(3, 47);
@@ -249,42 +290,6 @@ namespace db_assignment_2
             this.gunaDataGridView_main.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gunaDataGridView_main.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gunaDataGridView_main_CellMouseClick);
             // 
-            // gunaRadioButton_quantri_yes
-            // 
-            this.gunaRadioButton_quantri_yes.AutoSize = true;
-            this.gunaRadioButton_quantri_yes.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaRadioButton_quantri_yes.CheckedState.BorderThickness = 0;
-            this.gunaRadioButton_quantri_yes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaRadioButton_quantri_yes.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunaRadioButton_quantri_yes.CheckedState.InnerOffset = -4;
-            this.gunaRadioButton_quantri_yes.Location = new System.Drawing.Point(108, 102);
-            this.gunaRadioButton_quantri_yes.Name = "gunaRadioButton_quantri_yes";
-            this.gunaRadioButton_quantri_yes.Size = new System.Drawing.Size(40, 19);
-            this.gunaRadioButton_quantri_yes.TabIndex = 23;
-            this.gunaRadioButton_quantri_yes.Text = "Có";
-            this.gunaRadioButton_quantri_yes.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaRadioButton_quantri_yes.UncheckedState.BorderThickness = 2;
-            this.gunaRadioButton_quantri_yes.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunaRadioButton_quantri_yes.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // gunaRadioButton_quantri_no
-            // 
-            this.gunaRadioButton_quantri_no.AutoSize = true;
-            this.gunaRadioButton_quantri_no.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaRadioButton_quantri_no.CheckedState.BorderThickness = 0;
-            this.gunaRadioButton_quantri_no.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaRadioButton_quantri_no.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunaRadioButton_quantri_no.CheckedState.InnerOffset = -4;
-            this.gunaRadioButton_quantri_no.Location = new System.Drawing.Point(154, 102);
-            this.gunaRadioButton_quantri_no.Name = "gunaRadioButton_quantri_no";
-            this.gunaRadioButton_quantri_no.Size = new System.Drawing.Size(60, 19);
-            this.gunaRadioButton_quantri_no.TabIndex = 24;
-            this.gunaRadioButton_quantri_no.Text = "Không";
-            this.gunaRadioButton_quantri_no.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaRadioButton_quantri_no.UncheckedState.BorderThickness = 2;
-            this.gunaRadioButton_quantri_no.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunaRadioButton_quantri_no.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
             // gunaGroupBox_datatable
             // 
             this.gunaGroupBox_datatable.BackColor = System.Drawing.Color.Transparent;
@@ -315,32 +320,42 @@ namespace db_assignment_2
             this.guna2GroupBox1.Text = "Danh sách quản trị";
             this.guna2GroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
+            // lb_admin_count
+            // 
+            this.lb_admin_count.AutoSize = true;
+            this.lb_admin_count.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_admin_count.Location = new System.Drawing.Point(156, 200);
+            this.lb_admin_count.Name = "lb_admin_count";
+            this.lb_admin_count.Size = new System.Drawing.Size(15, 17);
+            this.lb_admin_count.TabIndex = 26;
+            this.lb_admin_count.Text = "0";
+            // 
             // gunaDataGridView_adminlist
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView_adminlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView_adminlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView_adminlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView_adminlist.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView_adminlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView_adminlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView_adminlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView_adminlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView_adminlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDataGridView_adminlist.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView_adminlist.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView_adminlist.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView_adminlist.EnableHeadersVisualStyles = false;
             this.gunaDataGridView_adminlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView_adminlist.Location = new System.Drawing.Point(3, 47);
@@ -373,16 +388,6 @@ namespace db_assignment_2
             this.gunaDataGridView_adminlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView_adminlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // lb_admin_count
-            // 
-            this.lb_admin_count.AutoSize = true;
-            this.lb_admin_count.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_admin_count.Location = new System.Drawing.Point(156, 200);
-            this.lb_admin_count.Name = "lb_admin_count";
-            this.lb_admin_count.Size = new System.Drawing.Size(15, 17);
-            this.lb_admin_count.TabIndex = 26;
-            this.lb_admin_count.Text = "0";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -393,24 +398,24 @@ namespace db_assignment_2
             this.label6.TabIndex = 25;
             this.label6.Text = "Tổng số hàng hiển thị : ";
             // 
-            // gunaButton_filter
+            // gunaButton_find
             // 
-            this.gunaButton_filter.CheckedState.Parent = this.gunaButton_filter;
-            this.gunaButton_filter.CustomImages.Parent = this.gunaButton_filter;
-            this.gunaButton_filter.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaButton_filter.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton_filter.ForeColor = System.Drawing.Color.White;
-            this.gunaButton_filter.HoverState.Parent = this.gunaButton_filter;
-            this.gunaButton_filter.Image = global::db_assignment_2.Properties.Resources.fluent_filter;
-            this.gunaButton_filter.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaButton_filter.Location = new System.Drawing.Point(584, 606);
-            this.gunaButton_filter.Name = "gunaButton_filter";
-            this.gunaButton_filter.ShadowDecoration.Parent = this.gunaButton_filter;
-            this.gunaButton_filter.Size = new System.Drawing.Size(137, 27);
-            this.gunaButton_filter.TabIndex = 26;
-            this.gunaButton_filter.Text = "Bộ lọc dữ liệu";
-            this.gunaButton_filter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunaButton_filter.Click += new System.EventHandler(this.gunaButton_filter_Click);
+            this.gunaButton_find.CheckedState.Parent = this.gunaButton_find;
+            this.gunaButton_find.CustomImages.Parent = this.gunaButton_find;
+            this.gunaButton_find.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.gunaButton_find.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_find.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_find.HoverState.Parent = this.gunaButton_find;
+            this.gunaButton_find.Image = global::db_assignment_2.Properties.Resources.fluent_search;
+            this.gunaButton_find.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_find.Location = new System.Drawing.Point(10, 106);
+            this.gunaButton_find.Name = "gunaButton_find";
+            this.gunaButton_find.ShadowDecoration.Parent = this.gunaButton_find;
+            this.gunaButton_find.Size = new System.Drawing.Size(105, 27);
+            this.gunaButton_find.TabIndex = 26;
+            this.gunaButton_find.Text = "Tìm kiếm";
+            this.gunaButton_find.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton_find.Click += new System.EventHandler(this.gunaButton_find_Click);
             // 
             // gunaButton_taidulieu
             // 
@@ -488,12 +493,73 @@ namespace db_assignment_2
             this.gunaButton_themtaikhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.gunaButton_themtaikhoan.Click += new System.EventHandler(this.gunaButton_themtaikhoan_Click);
             // 
+            // gunaTextBox_keyword
+            // 
+            this.gunaTextBox_keyword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox_keyword.DefaultText = "";
+            this.gunaTextBox_keyword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTextBox_keyword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTextBox_keyword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTextBox_keyword.DisabledState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTextBox_keyword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTextBox_keyword.FocusedState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox_keyword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTextBox_keyword.HoverState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Location = new System.Drawing.Point(10, 48);
+            this.gunaTextBox_keyword.Name = "gunaTextBox_keyword";
+            this.gunaTextBox_keyword.PasswordChar = '\0';
+            this.gunaTextBox_keyword.PlaceholderText = "";
+            this.gunaTextBox_keyword.SelectedText = "";
+            this.gunaTextBox_keyword.ShadowDecoration.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Size = new System.Drawing.Size(294, 27);
+            this.gunaTextBox_keyword.TabIndex = 27;
+            // 
+            // guna2GroupBox2
+            // 
+            this.guna2GroupBox2.Controls.Add(this.rb_manhanvien);
+            this.guna2GroupBox2.Controls.Add(this.rb_username);
+            this.guna2GroupBox2.Controls.Add(this.gunaTextBox_keyword);
+            this.guna2GroupBox2.Controls.Add(this.gunaButton_find);
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox2.Location = new System.Drawing.Point(846, 486);
+            this.guna2GroupBox2.Name = "guna2GroupBox2";
+            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
+            this.guna2GroupBox2.Size = new System.Drawing.Size(313, 147);
+            this.guna2GroupBox2.TabIndex = 27;
+            this.guna2GroupBox2.Text = "Tìm kiếm";
+            this.guna2GroupBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // rb_username
+            // 
+            this.rb_username.AutoSize = true;
+            this.rb_username.Location = new System.Drawing.Point(10, 81);
+            this.rb_username.Name = "rb_username";
+            this.rb_username.Size = new System.Drawing.Size(78, 19);
+            this.rb_username.TabIndex = 28;
+            this.rb_username.TabStop = true;
+            this.rb_username.Text = "Username";
+            this.rb_username.UseVisualStyleBackColor = true;
+            // 
+            // rb_manhanvien
+            // 
+            this.rb_manhanvien.AutoSize = true;
+            this.rb_manhanvien.Location = new System.Drawing.Point(207, 81);
+            this.rb_manhanvien.Name = "rb_manhanvien";
+            this.rb_manhanvien.Size = new System.Drawing.Size(97, 19);
+            this.rb_manhanvien.TabIndex = 29;
+            this.rb_manhanvien.TabStop = true;
+            this.rb_manhanvien.Text = "Mã nhân viên";
+            this.rb_manhanvien.UseVisualStyleBackColor = true;
+            // 
             // TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.gunaButton_filter);
+            this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.gunaGroupBox_datatable);
             this.Controls.Add(this.gunaGroupBox_thongtintaikhoan);
@@ -513,6 +579,8 @@ namespace db_assignment_2
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView_adminlist)).EndInit();
+            this.guna2GroupBox2.ResumeLayout(false);
+            this.guna2GroupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -544,6 +612,10 @@ namespace db_assignment_2
         private Guna.UI2.WinForms.Guna2DataGridView gunaDataGridView_adminlist;
         private System.Windows.Forms.Label lb_admin_count;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button gunaButton_filter;
+        private Guna.UI2.WinForms.Guna2Button gunaButton_find;
+        private Guna.UI2.WinForms.Guna2TextBox gunaTextBox_keyword;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private System.Windows.Forms.RadioButton rb_manhanvien;
+        private System.Windows.Forms.RadioButton rb_username;
     }
 }

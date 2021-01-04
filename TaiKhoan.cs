@@ -170,10 +170,59 @@ namespace db_assignment_2
             f_capnhattaikhoan.Show();
         }
 
-        private void gunaButton_filter_Click(object sender, EventArgs e)
+        private void gunaButton_find_Click(object sender, EventArgs e)
         {
-            var f_filter = new FormLocTaiKhoan();
-            f_filter.Show();
+            string keyword = gunaTextBox_keyword.Text;
+            string queryFind = "";
+            string queryFindAdmin = "";
+
+            if (rb_manhanvien.Checked == true)
+            {
+                queryFind = "select * from Taikhoan where Manhanvien = '{0}'";
+                queryFindAdmin = "select Username Taikhoan where Manhanvien = '{0}' and Covaitroquantri = 1";
+            }
+            else
+            {
+                queryFind = "select * from Taikhoan where Username = '{0}'";
+                queryFindAdmin = "select Username from Taikhoan where Username = '{0}' and Covaitroquantri = 1";
+            }
+
+            queryFind = String.Format(queryFind, keyword);
+            queryFindAdmin = String.Format(queryFindAdmin, keyword);
+
+            loadDataFind(queryFind, queryFindAdmin);
         }
+
+        DataTable FindTableReturn(string query)
+        {
+
+            DataTable data = new DataTable();
+
+            // "using" keyword : when we done, it will be deleted
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+
+                connection.Close();
+            }
+
+            return data;
+        }
+        private void loadDataFind(string queryAll, string queryAdmin)
+        {
+            gunaDataGridView_main.DataSource = FindTableReturn(queryAll);
+            gunaDataGridView_main.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_main.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            gunaDataGridView_adminlist.DataSource = FindTableReturn(queryAdmin);
+            gunaDataGridView_adminlist.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_adminlist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
     }
 }
