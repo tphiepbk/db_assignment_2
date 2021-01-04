@@ -399,6 +399,7 @@ namespace db_assignment_2
             this.btnupdate.TabIndex = 15;
             this.btnupdate.Text = "Sửa";
             this.btnupdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btndelete
             // 
@@ -417,6 +418,7 @@ namespace db_assignment_2
             this.btndelete.TabIndex = 14;
             this.btndelete.Text = "Xoá";
             this.btndelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btninsert
             // 
@@ -435,6 +437,7 @@ namespace db_assignment_2
             this.btninsert.TabIndex = 13;
             this.btninsert.Text = "Thêm";
             this.btninsert.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
             // Nhanvien
             // 

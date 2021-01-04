@@ -90,8 +90,10 @@ namespace db_assignment_2
                 }
             }
 
-            
-            this.Close();
+            if (input_password != "" || cb_matkhau.Checked == false)
+            {
+                this.Close();
+            }
         }
 
         private void gunaButton_cancel_Click(object sender, EventArgs e)
