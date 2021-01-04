@@ -41,11 +41,39 @@ namespace db_assignment_2
             return data;
         }
 
+        DataTable GetAllAdmin()
+        {
+
+            DataTable data = new DataTable();
+
+            string query = "select Username from Taikhoan where Covaitroquantri = 1";
+
+            // "using" keyword : when we done, it will be deleted
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+
+                connection.Close();
+            }
+
+            return data;
+        }
+
+
         private void loadData()
         {
             gunaDataGridView_main.DataSource = GetAllAccount();
             gunaDataGridView_main.AutoResizeColumnHeadersHeight();
             gunaDataGridView_main.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            gunaDataGridView_adminlist.DataSource = GetAllAdmin();
+            gunaDataGridView_adminlist.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_adminlist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void getCount()
         {
@@ -59,6 +87,16 @@ namespace db_assignment_2
                 connection.Close();
             }
             lb_count.Text = count.ToString();
+
+            string queryGetAdminCount = "select count(*) from Taikhoan where Covaitroquantri = 1";
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(queryGetAdminCount, connection);
+                count = (int)command.ExecuteScalar();
+                connection.Close();
+            }
+            lb_admin_count.Text = count.ToString();
         }
 
         private void TaiKhoan_Load(object sender, EventArgs e)
@@ -101,6 +139,43 @@ namespace db_assignment_2
         private void gunaButton_taidulieu_Click(object sender, EventArgs e)
         {
             loadData();
+            getCount();
+        }
+
+        private void gunaButton_xoataikhoan_Click(object sender, EventArgs e)
+        {
+            int current_row_index = gunaDataGridView_main.CurrentCell.RowIndex;
+            string current_username = gunaDataGridView_main.Rows[current_row_index].Cells[0].Value.ToString();
+
+            string temp = "delete from Taikhoan where Username = '{0}'";
+            string queryDeleteAccount = String.Format(temp, current_username);
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(queryDeleteAccount, connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+
+            loadData();
+
+            /*
+            var f_xoataikhoan = new FormXoaTaiKhoan();
+            f_xoataikhoan.Show();
+            */
+        }
+
+        private void gunaButton_capnhattaikhoan_Click(object sender, EventArgs e)
+        {
+            var f_capnhattaikhoan = new FormCapNhatTaiKhoan();
+            f_capnhattaikhoan.Show();
+        }
+
+        private void gunaButton_filter_Click(object sender, EventArgs e)
+        {
+            var f_filter = new FormLocTaiKhoan();
+            f_filter.Show();
         }
     }
 }

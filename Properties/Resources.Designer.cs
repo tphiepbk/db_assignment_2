@@ -153,6 +153,16 @@ namespace db_assignment_2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fluent_filter {
+            get {
+                object obj = ResourceManager.GetObject("fluent_filter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent_insert {
             get {
                 object obj = ResourceManager.GetObject("fluent_insert", resourceCulture);

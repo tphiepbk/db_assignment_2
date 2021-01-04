@@ -68,6 +68,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCapNhatTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatTaiKhoan.Designer.cs">
+      <DependentUpon>FormCapNhatTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocTaiKhoan.Designer.cs">
+      <DependentUpon>FormLocTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,12 @@
     </Compile>
     <Compile Include="FormThemTaiKhoan.Designer.cs">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXoaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXoaTaiKhoan.Designer.cs">
+      <DependentUpon>FormXoaTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.cs">
       <SubType>UserControl</SubType>
@@ -135,11 +153,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatTaiKhoan.resx">
+      <DependentUpon>FormCapNhatTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocTaiKhoan.resx">
+      <DependentUpon>FormLocTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThemKhachHang.resx">
       <DependentUpon>FormThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemTaiKhoan.resx">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXoaTaiKhoan.resx">
+      <DependentUpon>FormXoaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
@@ -221,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fluent_reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_filter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
