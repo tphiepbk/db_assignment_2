@@ -111,14 +111,14 @@ namespace db_assignment_2
             tb_username.Text = gunaDataGridView_main.Rows[rowIndex].Cells[0].Value.ToString();
             tb_matkhau.Text = gunaDataGridView_main.Rows[rowIndex].Cells[1].Value.ToString();
 
-            string quantri= gunaDataGridView_main.Rows[rowIndex].Cells[2].Value.ToString();
+            string quantri = gunaDataGridView_main.Rows[rowIndex].Cells[2].Value.ToString();
             if (quantri == "True")
             {
                 gunaRadioButton_quantri_yes.Checked = true;
                 gunaRadioButton_quantri_no.Checked = false;
             }
             else
-            { 
+            {
                 gunaRadioButton_quantri_yes.Checked = false;
                 gunaRadioButton_quantri_no.Checked = true;
             }
@@ -255,6 +255,74 @@ namespace db_assignment_2
             }
             lb_admin_count.Text = count.ToString();
         }
+        DataTable JoinTableReturn(int admin)
+        {
+            DataTable data = new DataTable();
 
+            string query = "";
+
+            if (admin == 0)
+            {
+                query = "select * from Taikhoan join Nhanvien on NhanvienID = Manhanvien";
+            }
+            else
+            {
+                query = "select Username, NhanvienID from Taikhoan join Nhanvien on NhanvienID = Manhanvien where Covaitroquantri = 1";
+            }
+            // "using" keyword : when we done, it will be deleted
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+
+                connection.Close();
+            }
+
+            return data;
+        }
+
+        private void loadDataJoin()
+        {
+            gunaDataGridView_main.DataSource = JoinTableReturn(0);
+            gunaDataGridView_main.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_main.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            gunaDataGridView_adminlist.DataSource = JoinTableReturn(1);
+            gunaDataGridView_adminlist.AutoResizeColumnHeadersHeight();
+            gunaDataGridView_adminlist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+        private void getCountJoin()
+        {
+            string query = "select count(*) from Taikhoan join Nhanvien on Manhanvien = NhanvienID";
+            int count = 0;
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                count = (int)command.ExecuteScalar();
+                connection.Close();
+            }
+            lb_count.Text = count.ToString();
+
+            query = "select count(*) from Taikhoan join Nhanvien on Manhanvien = NhanvienID where Covaitroquantri = 1";
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                count = (int)command.ExecuteScalar();
+                connection.Close();
+            }
+            lb_admin_count.Text = count.ToString();
+        }
+
+        private void gunaButton_join_Click(object sender, EventArgs e)
+        {
+            loadDataJoin();
+            getCountJoin();
+        }
     }
 }

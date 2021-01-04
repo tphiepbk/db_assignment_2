@@ -136,11 +136,14 @@
   <data name="fluent_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_product1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fluent_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fluent_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_employee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fluent_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,10 +160,10 @@
   <data name="fluent_deal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_deal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_employee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fluent_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fluent_join" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_join.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

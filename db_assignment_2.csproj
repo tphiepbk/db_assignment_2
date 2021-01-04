@@ -237,5 +237,8 @@
   <ItemGroup>
     <None Include="Resources\fluent_search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_join.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

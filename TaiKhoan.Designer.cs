@@ -55,15 +55,16 @@ namespace db_assignment_2
             this.lb_admin_count = new System.Windows.Forms.Label();
             this.gunaDataGridView_adminlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.gunaTextBox_keyword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.rb_username = new System.Windows.Forms.RadioButton();
+            this.rb_manhanvien = new System.Windows.Forms.RadioButton();
+            this.gunaButton_join = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_find = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_taidulieu = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_capnhattaikhoan = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_xoataikhoan = new Guna.UI2.WinForms.Guna2Button();
             this.gunaButton_themtaikhoan = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaTextBox_keyword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.rb_username = new System.Windows.Forms.RadioButton();
-            this.rb_manhanvien = new System.Windows.Forms.RadioButton();
             this.gunaGroupBox_thongtintaikhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView_main)).BeginInit();
             this.gunaGroupBox_datatable.SuspendLayout();
@@ -232,6 +233,8 @@ namespace db_assignment_2
             // 
             this.gunaDataGridView_main.AllowUserToAddRows = false;
             this.gunaDataGridView_main.AllowUserToDeleteRows = false;
+            this.gunaDataGridView_main.AllowUserToResizeColumns = false;
+            this.gunaDataGridView_main.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(235)))), ((int)(((byte)(241)))));
             this.gunaDataGridView_main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gunaDataGridView_main.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -332,6 +335,8 @@ namespace db_assignment_2
             // 
             // gunaDataGridView_adminlist
             // 
+            this.gunaDataGridView_adminlist.AllowUserToResizeColumns = false;
+            this.gunaDataGridView_adminlist.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView_adminlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView_adminlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -397,6 +402,86 @@ namespace db_assignment_2
             this.label6.Size = new System.Drawing.Size(157, 17);
             this.label6.TabIndex = 25;
             this.label6.Text = "Tổng số hàng hiển thị : ";
+            // 
+            // gunaTextBox_keyword
+            // 
+            this.gunaTextBox_keyword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox_keyword.DefaultText = "";
+            this.gunaTextBox_keyword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTextBox_keyword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTextBox_keyword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTextBox_keyword.DisabledState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTextBox_keyword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTextBox_keyword.FocusedState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox_keyword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTextBox_keyword.HoverState.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Location = new System.Drawing.Point(10, 48);
+            this.gunaTextBox_keyword.Name = "gunaTextBox_keyword";
+            this.gunaTextBox_keyword.PasswordChar = '\0';
+            this.gunaTextBox_keyword.PlaceholderText = "";
+            this.gunaTextBox_keyword.SelectedText = "";
+            this.gunaTextBox_keyword.ShadowDecoration.Parent = this.gunaTextBox_keyword;
+            this.gunaTextBox_keyword.Size = new System.Drawing.Size(294, 27);
+            this.gunaTextBox_keyword.TabIndex = 27;
+            // 
+            // guna2GroupBox2
+            // 
+            this.guna2GroupBox2.Controls.Add(this.rb_manhanvien);
+            this.guna2GroupBox2.Controls.Add(this.rb_username);
+            this.guna2GroupBox2.Controls.Add(this.gunaTextBox_keyword);
+            this.guna2GroupBox2.Controls.Add(this.gunaButton_find);
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox2.Location = new System.Drawing.Point(846, 486);
+            this.guna2GroupBox2.Name = "guna2GroupBox2";
+            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
+            this.guna2GroupBox2.Size = new System.Drawing.Size(313, 147);
+            this.guna2GroupBox2.TabIndex = 27;
+            this.guna2GroupBox2.Text = "Tìm kiếm";
+            this.guna2GroupBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // rb_username
+            // 
+            this.rb_username.AutoSize = true;
+            this.rb_username.Location = new System.Drawing.Point(10, 81);
+            this.rb_username.Name = "rb_username";
+            this.rb_username.Size = new System.Drawing.Size(78, 19);
+            this.rb_username.TabIndex = 28;
+            this.rb_username.TabStop = true;
+            this.rb_username.Text = "Username";
+            this.rb_username.UseVisualStyleBackColor = true;
+            // 
+            // rb_manhanvien
+            // 
+            this.rb_manhanvien.AutoSize = true;
+            this.rb_manhanvien.Location = new System.Drawing.Point(207, 81);
+            this.rb_manhanvien.Name = "rb_manhanvien";
+            this.rb_manhanvien.Size = new System.Drawing.Size(97, 19);
+            this.rb_manhanvien.TabIndex = 29;
+            this.rb_manhanvien.TabStop = true;
+            this.rb_manhanvien.Text = "Mã nhân viên";
+            this.rb_manhanvien.UseVisualStyleBackColor = true;
+            // 
+            // gunaButton_join
+            // 
+            this.gunaButton_join.CheckedState.Parent = this.gunaButton_join;
+            this.gunaButton_join.CustomImages.Parent = this.gunaButton_join;
+            this.gunaButton_join.FillColor = System.Drawing.Color.Firebrick;
+            this.gunaButton_join.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton_join.ForeColor = System.Drawing.Color.White;
+            this.gunaButton_join.HoverState.Parent = this.gunaButton_join;
+            this.gunaButton_join.Image = global::db_assignment_2.Properties.Resources.fluent_join;
+            this.gunaButton_join.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaButton_join.Location = new System.Drawing.Point(562, 606);
+            this.gunaButton_join.Name = "gunaButton_join";
+            this.gunaButton_join.ShadowDecoration.Parent = this.gunaButton_join;
+            this.gunaButton_join.Size = new System.Drawing.Size(159, 27);
+            this.gunaButton_join.TabIndex = 28;
+            this.gunaButton_join.Text = "Kết nối nhân viên";
+            this.gunaButton_join.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaButton_join.Click += new System.EventHandler(this.gunaButton_join_Click);
             // 
             // gunaButton_find
             // 
@@ -493,72 +578,12 @@ namespace db_assignment_2
             this.gunaButton_themtaikhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.gunaButton_themtaikhoan.Click += new System.EventHandler(this.gunaButton_themtaikhoan_Click);
             // 
-            // gunaTextBox_keyword
-            // 
-            this.gunaTextBox_keyword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox_keyword.DefaultText = "";
-            this.gunaTextBox_keyword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaTextBox_keyword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaTextBox_keyword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTextBox_keyword.DisabledState.Parent = this.gunaTextBox_keyword;
-            this.gunaTextBox_keyword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTextBox_keyword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTextBox_keyword.FocusedState.Parent = this.gunaTextBox_keyword;
-            this.gunaTextBox_keyword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox_keyword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTextBox_keyword.HoverState.Parent = this.gunaTextBox_keyword;
-            this.gunaTextBox_keyword.Location = new System.Drawing.Point(10, 48);
-            this.gunaTextBox_keyword.Name = "gunaTextBox_keyword";
-            this.gunaTextBox_keyword.PasswordChar = '\0';
-            this.gunaTextBox_keyword.PlaceholderText = "";
-            this.gunaTextBox_keyword.SelectedText = "";
-            this.gunaTextBox_keyword.ShadowDecoration.Parent = this.gunaTextBox_keyword;
-            this.gunaTextBox_keyword.Size = new System.Drawing.Size(294, 27);
-            this.gunaTextBox_keyword.TabIndex = 27;
-            // 
-            // guna2GroupBox2
-            // 
-            this.guna2GroupBox2.Controls.Add(this.rb_manhanvien);
-            this.guna2GroupBox2.Controls.Add(this.rb_username);
-            this.guna2GroupBox2.Controls.Add(this.gunaTextBox_keyword);
-            this.guna2GroupBox2.Controls.Add(this.gunaButton_find);
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(846, 486);
-            this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(313, 147);
-            this.guna2GroupBox2.TabIndex = 27;
-            this.guna2GroupBox2.Text = "Tìm kiếm";
-            this.guna2GroupBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            // 
-            // rb_username
-            // 
-            this.rb_username.AutoSize = true;
-            this.rb_username.Location = new System.Drawing.Point(10, 81);
-            this.rb_username.Name = "rb_username";
-            this.rb_username.Size = new System.Drawing.Size(78, 19);
-            this.rb_username.TabIndex = 28;
-            this.rb_username.TabStop = true;
-            this.rb_username.Text = "Username";
-            this.rb_username.UseVisualStyleBackColor = true;
-            // 
-            // rb_manhanvien
-            // 
-            this.rb_manhanvien.AutoSize = true;
-            this.rb_manhanvien.Location = new System.Drawing.Point(207, 81);
-            this.rb_manhanvien.Name = "rb_manhanvien";
-            this.rb_manhanvien.Size = new System.Drawing.Size(97, 19);
-            this.rb_manhanvien.TabIndex = 29;
-            this.rb_manhanvien.TabStop = true;
-            this.rb_manhanvien.Text = "Mã nhân viên";
-            this.rb_manhanvien.UseVisualStyleBackColor = true;
-            // 
             // TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.gunaButton_join);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.gunaGroupBox_datatable);
@@ -617,5 +642,6 @@ namespace db_assignment_2
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private System.Windows.Forms.RadioButton rb_manhanvien;
         private System.Windows.Forms.RadioButton rb_username;
+        private Guna.UI2.WinForms.Guna2Button gunaButton_join;
     }
 }
