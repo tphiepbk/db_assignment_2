@@ -74,12 +74,6 @@
     <Compile Include="FormCapNhatTaiKhoan.Designer.cs">
       <DependentUpon>FormCapNhatTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLocTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLocTaiKhoan.Designer.cs">
-      <DependentUpon>FormLocTaiKhoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,12 +85,6 @@
     </Compile>
     <Compile Include="FormThemTaiKhoan.Designer.cs">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormXoaTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormXoaTaiKhoan.Designer.cs">
-      <DependentUpon>FormXoaTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.cs">
       <SubType>UserControl</SubType>
@@ -156,17 +144,11 @@
     <EmbeddedResource Include="FormCapNhatTaiKhoan.resx">
       <DependentUpon>FormCapNhatTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLocTaiKhoan.resx">
-      <DependentUpon>FormLocTaiKhoan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormThemKhachHang.resx">
       <DependentUpon>FormThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemTaiKhoan.resx">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormXoaTaiKhoan.resx">
-      <DependentUpon>FormXoaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>

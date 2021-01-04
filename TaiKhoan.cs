@@ -176,21 +176,32 @@ namespace db_assignment_2
             string queryFind = "";
             string queryFindAdmin = "";
 
+            string queryCountFind = "";
+            string queryCountFindAdmin = "";
+
             if (rb_manhanvien.Checked == true)
             {
                 queryFind = "select * from Taikhoan where Manhanvien = '{0}'";
-                queryFindAdmin = "select Username Taikhoan where Manhanvien = '{0}' and Covaitroquantri = 1";
+                queryFindAdmin = "select Username from Taikhoan where Manhanvien = '{0}' and Covaitroquantri = 1";
+                queryCountFind = "select count(*) from Taikhoan where Manhanvien = '{0}'";
+                queryCountFindAdmin = "select count(*) from Taikhoan where Manhanvien = '{0}' and Covaitroquantri = 1";
+
             }
             else
             {
                 queryFind = "select * from Taikhoan where Username = '{0}'";
                 queryFindAdmin = "select Username from Taikhoan where Username = '{0}' and Covaitroquantri = 1";
+                queryCountFind = "select count(*) from Taikhoan where Username = '{0}'";
+                queryCountFindAdmin = "select count(*) from Taikhoan where Username = '{0}' and Covaitroquantri = 1";
             }
 
             queryFind = String.Format(queryFind, keyword);
             queryFindAdmin = String.Format(queryFindAdmin, keyword);
+            queryCountFind = String.Format(queryCountFind, keyword);
+            queryCountFindAdmin = String.Format(queryCountFindAdmin, keyword);
 
             loadDataFind(queryFind, queryFindAdmin);
+            getCountFind(queryCountFind, queryCountFindAdmin);
         }
 
         DataTable FindTableReturn(string query)
@@ -222,6 +233,27 @@ namespace db_assignment_2
             gunaDataGridView_adminlist.DataSource = FindTableReturn(queryAdmin);
             gunaDataGridView_adminlist.AutoResizeColumnHeadersHeight();
             gunaDataGridView_adminlist.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+        private void getCountFind(string queryCountFind, string queryCountFindAdmin)
+        {
+            int count = 0;
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(queryCountFind, connection);
+                count = (int)command.ExecuteScalar();
+                connection.Close();
+            }
+            lb_count.Text = count.ToString();
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(queryCountFindAdmin, connection);
+                count = (int)command.ExecuteScalar();
+                connection.Close();
+            }
+            lb_admin_count.Text = count.ToString();
         }
 
     }
