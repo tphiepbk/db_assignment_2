@@ -91,7 +91,16 @@ namespace db_assignment_2
         {
             command = connect.CreateCommand();
             command.CommandText = "insert into Nhanvien values('" + txtid.Text + "','" + cbosex.Text + "','" + txtaddr.Text + "','" + txtphone.Text + "','" + txtname.Text + "','" + dtimebirth.Text + "','" + txtemail.Text + "','" + txtmachinhanh.Text + "','" + dtimestart.Text + "')";
-            command.ExecuteNonQuery();
+           // command.ExecuteNonQuery();
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Nhân viên ở chi nhánh này bị quá tải!");
+                return;
+            }
             show();
         }
 
