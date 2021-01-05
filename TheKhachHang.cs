@@ -293,6 +293,45 @@ namespace db_assignment_2
                 }
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM Thekhachhang JOIN Loaithe ON Thekhachhang.Mathe = Loaithe.Mathe";
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Mathe", tb_mathe1.Text);
+                    command.Parameters.AddWithValue("@Diemtichluy", tb_diemtichluy1.Text);
+                    command.Parameters.AddWithValue("@Makhachhang", tb_makhachhang1.Text);
+                    command.Parameters.AddWithValue("@Machinhanh", tb_machinhanh1.Text);
+                    command.Parameters.AddWithValue("@Ngaycapthe", tb_ngaycapthe1.Text);
+
+
+                    DataTable data = new DataTable();
+
+                    connection.Open();
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data);
+
+                    connection.Close();
+
+                    gunaDataGridView_TheKhachHang.DataSource = data;
+                    gunaDataGridView_TheKhachHang.AutoResizeColumnHeadersHeight();
+                    gunaDataGridView_TheKhachHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    getCount();
+
+                    //connection.Open();
+                    //int result = command.ExecuteNonQuery();
+
+                    //// Check Error
+                    //if (result < 0)
+                    //    Console.WriteLine("Error inserting data into Database!");
+                }
+            }
+        }
     }
 }
 

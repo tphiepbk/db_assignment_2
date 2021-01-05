@@ -8,6 +8,6 @@ namespace db_assignment_2
 {
     class ConnectionString
     {
-           public static string connectionString = @"Data Source=TPHBK;Initial Catalog = assignment_2; Integrated Security = True";
+        public static string connectionString = @"Data Source=TPHBK;Initial Catalog=demo;Integrated Security=True"; 
     }
 }
